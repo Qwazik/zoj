@@ -1,0 +1,253 @@
+extends _template
+
+block main
+	// video block
+	.page__video-block.clearfix
+		.container
+			.video-block
+				.video-block__text
+					h2 Игра которая<br/>ра<span>ЗОЖ</span>жет<br/>в тебе огонь
+					p.orange и изменит тебя
+					p.quest хочешь получить тело своей мечты <br> и один миллион рублей? 
+				.video-block__video
+					<iframe src="https://www.youtube.com/embed/A3PDXmYoF5U" frameborder="0" allowfullscreen></iframe>
+	// video block end 
+	// rules
+	.page__rules
+		.container
+			.rules
+				h2 Правила игры:
+				p.orange всего 2 правила!
+				ul
+					li: <span>К</span>аждый день в течении 4-х недель ты получаешь от нас тренировочные задания и выполняешь их;
+					li: <span>В</span> конце каждой недели ты сдаешь «зачетное задание» по результатам которого ты переходишь в следующий этап игры, то есть в следующую неделю
+	// rules end 
+	// prize
+	.page__prize
+		.container
+			.prize
+				h2 Призы:
+				.prize-list
+					.prize__row
+						.left
+							span.number 1-й приз
+							span.sum 1 000 000 
+							span.currency руб. 
+							span.pos 1-е место
+					.prize__row
+						.left
+							span.number 2-й приз
+							span.sum 600 000 
+							span.currency руб. 
+						.right
+							.right-row
+								span.sum 200 000
+								span.pos 2-е место
+							.right-row
+								span.sum 200 000
+								span.pos 3-е место
+							.right-row
+								span.sum 200 000
+								span.pos 4-е место
+					.prize__row
+						.left
+							span.number 3-й приз
+							span.sum 300 000  
+							span.currency руб.  
+						.right
+							.right-row
+								span.sum 100 000
+								span.pos 5-е место
+							.right-row
+								span.sum 100 000
+								span.pos 6-е место
+							.right-row
+								span.sum 100 000
+								span.pos 7-е место
+	// prize end 
+	// popa
+	.page__popa
+		.container
+			.popa
+				.popa__text
+					h2 Приз за самую<br> лучшую попу *–  
+					.orange
+						span 200 000
+						| рублей
+				.popa__image
+					img(src="img/popa.png", alt="")
+		.border-bottom
+	// popa end 
+	// how-work
+	.page__how-work.clearifx
+		.container
+			.how-work
+				.how-work__image
+					img(src="img/pioner.png", alt="")
+				.how-work__text
+					h2 Как ты будешь меняться?
+					p.orange Тебе не нужны тренажеры и спортивные снаряды. 
+					p.last Ты удивишься на сколько эффективны упражнения со своим весом.
+	// how-work end 
+	// before-after
+	.page__before-after
+		.before-after
+			.before-after__header
+				.container
+					span До
+					span После
+			.container
+				.before-after__carousel
+					ul.carousel-nav
+						li.prev <i class="fa fa-arrow-left"></i>
+						li.next <i class="fa fa-arrow-right"></i>
+					ul#jsBeforeAfterCarousel
+						li: img(src="img/before-after-image.png", alt="")
+						li: img(src="img/before-after-image.png", alt="")
+						li: img(src="img/before-after-image.png", alt="")
+						li: img(src="img/before-after-image.png", alt="")
+	// before-after end 
+	// example 
+	.page__example
+		.container
+			.example
+				h2 Примеры упражнений
+				.video-block__video
+					<iframe src="https://www.youtube.com/embed/A3PDXmYoF5U" frameborder="0" allowfullscreen></iframe>
+	// example end 
+	// steps 
+	.page__steps
+		.container
+			.steps
+				h2 Как принять участие
+				ul.steps__body
+					li.steps__item
+						.image-wrap: img(src="img/step1.png", alt="")
+						span 1. <span>О</span>плачиваешь участие
+					li.steps__item
+						.image-wrap: img(src="img/step2.png", alt="")
+						span 2. <span>Д</span>елаешь фото «До»
+					li.steps__item
+						.image-wrap: img(src="img/step3.png", alt="")
+						span 3.	<span>Т</span>ренируешься и правильно питаешься в течении 4-х недель
+					li.steps__item.fordesk
+						.image-wrap: img(src="img/step6.png", alt="")
+						span 6.	<span>П</span>обеждаешь
+					li.steps__item.fordesk
+						.image-wrap: img(src="img/step5.png", alt="")
+						span 5.	<span>П</span>ринимаешь участие в голосовании
+					li.steps__item.formobile.fordesk
+						.image-wrap: img(src="img/step4.png", alt="")
+						span 4.	<span>Д</span>елаешь фото «после»
+					li.steps__item.formobile
+						.image-wrap: img(src="img/step5.png", alt="")
+						span 5.	<span>П</span>ринимаешь участие в голосовании
+					li.steps__item.formobile
+						.image-wrap: img(src="img/step6.png", alt="")
+						span 6.	<span>П</span>обеждаешь
+					
+	// steps end 
+	// home-cabinet 
+	.page__home-cabinet
+		.container
+			.home-cabinet
+				
+				.home-cabinet__image
+					img(src="img/home-cabinet-img.png", alt="")
+				.home-cabinet__text
+					h2 твой личный кабинет
+					p в нём ты будешь получать программу тренировок, сдавать «зачеты», общаться с участниками и твоими тренерами и помощниками ЗОЖвожатыми
+					p.last заходи, тебе там помогут
+					a(href="#").btn.btn--cabinet войти в личный кабинет
+	// home-cabinet end 
+	// tickets 
+	.page__tickets
+		.container
+			.tickets
+				h2 Почем?
+				ul.tickets__list
+					li.tickets__item
+						img(src="img/ticket1.png", alt="")
+						span.desc Ты худеешь, приводишь свое тело в тонус и участвуешь в розыгрыше призов.
+						a(href="#").btn.btn--orange Приобрести
+					li.tickets__item
+						img(src="img/ticket2.png", alt="")
+						span.desc Тут ты страхуешь себя от вылета (получаешь 1 зачет автоматом)
+						a(href="#").btn.btn--orange Приобрести
+					li.tickets__item
+						img(src="img/ticket3.png", alt="")
+						span.desc Участие для тебя и твоей половинки (мужа/жены)
+						a(href="#").btn.btn--orange Приобрести
+					li.tickets__item
+						img(src="img/ticket4.png", alt="")
+						span.desc Собери отряд из 4-х человек и сэкономь 2000 руб
+						a(href="#").btn.btn--orange Приобрести
+					li.tickets__item
+						img(src="img/ticket5.png", alt="")
+						span.desc Участие в розыгрыше с освобождением от сдачи зачетов. Покупай билет и делай что хочешь. Ешь хоть сгущенку с печенюхами. Тебя все равно не отчислят.
+						a(href="#").btn.btn--orange Приобрести
+	// tickets end 
+	// questions  
+	.page__questions
+		.questions
+			.questions__header
+					h2 
+						span.container участник! внимательно прочти!
+					p 
+						span.container мы уже отвечали на эти вопросы!
+			.container
+				.questions__body
+					.questions__row.clearfix
+						.questions__col
+							span.header Общие вопросы
+							.questions__item
+								.title Когда стартует проект?
+								.answer Проект стартует 27 марта
+							.questions__item
+								.title Как участвовать в игре при полной занятости?
+								.answer Тренировки рассчитаны  на выполнение дома и занимаютне более 30-40 минут. Тренировку можно выполнить  утром до работы, либо вечером после работы. Главное успеть до 0:00. Для многих не составляет труда делать тренировку прямо на рабочем месте)
+							.questions__item
+								.title Что делать если у меня не получается каждый день выполнять тренировки?
+								.answer Чтобы оставаться в игре нужно сдавать только зачетное задание по субботам. Но если ты не будешь выполнять ежедневные задания, ты не похудеешь. 
+							.questions__item
+								.title Сколько времени длятся тренировки?
+								.answer 30-40 минут
+							.questions__item
+								.title Если у меня ограничения по здоровью, могу ли я участвовать в проекте?
+								.answer Тренировки включают в себя интенсивные физические нагрузки. И чтобы понять можно ли тебе участвовать в проекте, необходимо проконсультироваться с врачом, показав ему примеры упражнений на сайте.
+							.questions__item
+								.title Вы даете индивидуальную программу питания?
+								.answer Мы даем подробные рекомендации для составления рациона питания на основе расчета твоей суточной потребности в калориях. Ты сам будешь выбирать что тебе есть. Не важно, вегетарианец ты или любитель стейков средней прожарки.
+						.questions__col
+							span.header Задания и зачеты
+							.questions__item
+								.title Чем отличаются тренировки для мужчин и женщин?
+								.answer Ничем. Тренировки универсальны.
+							.questions__item
+								.title А можно сначала попробовать тренировки, а потом заплатить?
+								.answer Нет
+							.questions__item
+								.title За что отчисляют с проекта?
+								.answer 
+									ol
+										li Невыполнение еженедельного задания 
+										li Некорректное поведение в чате и соцсетях 
+										li Глупость (Неспособность следовать простым правилам проекта)
+							.questions__item
+								.title Нужно ли ежедневно снимать на видео тренировки?
+								.answer Нет. На видео снимается только для зачетного задания в субботу.
+							.questions__item
+								.title Я стесняюсь выкладывать свои видео зачетных заданий. Их все увидят?
+								.answer Нет, их увидят только наши вожатые.
+						.questions__col
+							span.header Голосование и призы
+							.questions__item
+								.title Как определяется победитель?
+								.answer Победитель определяется путем голосования. Финалисты определяются на основе фотографий До и После всех участников участвующих в розыгрыше и сдавших все зачеты.
+							.questions__item
+								.title Как забрать приз?
+								.answer Призы в денежном эквиваленте мы вышлем тебе на карту.
+							.questions__item
+								.title Что такое приз за лучшую попу?
+								.answer Отдельно от общего голосования за 1,2,3 места будет проведено голосование за лучшую попу проекта (только для женщин), которая будет определена так же на основе фото ДО и ПОСЛЕ, большинством голосов.
+	// questions end 
