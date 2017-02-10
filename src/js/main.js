@@ -30,6 +30,31 @@ $(function() {
     $(window).resize(function(){
     	equalHeight('.tickets__list','.tickets__item span');
     })
+    /*-------------------------------------------------*/
+    /*  form - styler
+    /*-------------------------------------------------*/
+    $('.select--default, [class*="checkbox"]').styler();
+
+    /*-------------------------------------------------*/
+    /*  full height
+    /*-------------------------------------------------*/
+    pageHeight('.page', '.max-width-login');
+    $(window).resize(function(){
+        pageHeight('.page', '.max-width-login');
+    });
+    /*-------------------------------------------------*/
+    /*  other
+    /*-------------------------------------------------*/
+    $('.fancybox').each(function(){
+        var className = $(this).attr('href').replace('#','');
+        $(this).fancybox({
+            wrapCSS: 'fancybox-'+className
+        });
+    });
+
+    
+
+
 });
 
 function equalHeight(wrap, element){
@@ -47,4 +72,16 @@ function equalHeight(wrap, element){
             $(this).height(maxHeight);
         });
     });
+}
+
+function pageHeight(container, body){
+    if($(container).length && $(body).length){
+        if($(window).height() > $(container).height()){
+            th = $(body).height();
+            while($(container).height() < $(window).height()){
+                $(body).height(th);
+                th++;
+            }
+        }
+    }
 }
